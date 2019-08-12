@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap"rel="stylesheet");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
 
 .mainContainer {
   background: #f5f4ef;
   width: 1440px;
-  height: 1024px;
+  height: 830px;
   padding: 0px;
   margin: 0px;
 }
@@ -11,7 +11,7 @@ header {
   position: relative;
   left: 20px;
   top: 35px;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   line-height: 25px;
   display: flex;
