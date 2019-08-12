@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 class Card1 extends Component {
-  root = "https://jsonplaceholder.typicode.com";
-  path = "/photos";
+  root = "https://jsonplaceholder.typicode.com/comments";
 
   state = {
     loaded: false
@@ -14,27 +13,27 @@ class Card1 extends Component {
       loaded: true,
       images: [
         {
-          PhotoId: response.userId.id[0],
-          PhotoUrl: response.userId.url
+          photoId: response.data[0].id,
+          photoUrl: response.data[0].url
         },
         {
-          PhotoId: response.userId.id[1],
-          PhotoUrl: response.userId.url
+          photoId: response.data[1].id,
+          photoUrl: response.data[1].url
         },
         {
-          PhotoId: response.userId.id[2],
-          PhotoUrl: response.userId.url
+          photoId: response.data[2].id,
+          photoUrl: response.data[2].url
         }
       ]
     });
   };
 
   pictures = () => {
-    let url = `${this.root}${this.path}`;
+    let url = `${this.root}`;
     axios.get(url).then(this.showPhotos);
   };
 
-  componentDidMount() {
+  componentWillMount() {
     this.showPhotos();
   }
   render() {
@@ -57,16 +56,24 @@ class Card1 extends Component {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src={this.state.image.photoUrl}
+                src={this.state.image.photoUrl[0]}
                 className="d-block w-100"
                 alt=""
               />
             </div>
             <div className="carousel-item">
-              <img src="..." className="d-block w-100" alt="..." />
+              <img
+                src={this.state.image.photoUrl[1]}
+                className="d-block w-100"
+                alt="..."
+              />
             </div>
             <div className="carousel-item">
-              <img src="..." className="d-block w-100" alt="..." />
+              <img
+                src={this.state.image.photoUrl[2]}
+                className="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <a
