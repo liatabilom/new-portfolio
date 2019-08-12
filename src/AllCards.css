@@ -1,0 +1,25 @@
+.mainCards {
+  position: relative;
+  left: 120px;
+  top: 10px;
+  max-width: 1001px;
+  max-height: 605px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.card2 {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  height: 487px;
+  width: 336px;
+}
+
+.card3 {
+  position: relative;
+  right: 110px;
+  bottom: 8px;
+  height: 487px;
+  width: 336px;
+}

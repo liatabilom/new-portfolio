@@ -1,0 +1,13 @@
+.btn-outline-dark {
+  color: #00000;
+  border-color: #00000;
+}
+
+.page-button {
+  color: black;
+}
+
+.page-button:hover {
+  text-decoration: none;
+  color: white;
+}
