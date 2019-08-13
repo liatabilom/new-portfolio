@@ -23,3 +23,8 @@
   height: 487px;
   width: 336px;
 }
+
+.carousel {
+  position: relative;
+  top: 80px;
+}
