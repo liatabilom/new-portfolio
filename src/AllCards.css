@@ -28,3 +28,9 @@
   position: relative;
   top: 80px;
 }
+
+.loader {
+  position: relative;
+  text-align: center;
+  top: 200px;
+}

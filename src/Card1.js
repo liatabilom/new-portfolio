@@ -35,7 +35,11 @@ class Card1 extends Component {
         </div>
       );
     } else {
-      return <Loader type="Puff" color="#00000" height="100" width="100" />;
+      return (
+        <div className="loader">
+          <Loader type="Puff" color="#464159" height="100" width="100" />
+        </div>
+      );
     }
   };
 
