@@ -43,19 +43,12 @@ class Card1 extends Component {
     }
   };
 
+  //UPDATE FONT SIZE
   render() {
     return (
       <div>
         <h1>
-          <span className="title">
-            BROO
-            <br />
-            KSBR
-            <br />
-            OTHE
-            <br />
-            RS
-          </span>
+          <span className="title">BROO KSBR OTHE RS</span>
           {this.carousel()}
         </h1>
         <h5>
