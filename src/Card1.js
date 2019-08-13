@@ -5,7 +5,7 @@ import Loader from "react-loader-spinner";
 
 class Card1 extends Component {
   state = {
-    loaded: false
+    loaded: true
   };
 
   carousel = () => {
@@ -44,7 +44,29 @@ class Card1 extends Component {
   };
 
   render() {
-    return <div>{this.carousel()}</div>;
+    return (
+      <div>
+        <h1>
+          <span className="title">
+            BROO
+            <br />
+            KSBR
+            <br />
+            OTHE
+            <br />
+            RS
+          </span>
+          {this.carousel()}
+        </h1>
+        <h5>
+          <div className="selector">
+            <span>WOMEN</span>
+            <br />
+            <span>MULHER</span>
+          </div>
+        </h5>
+      </div>
+    );
   }
 }
 
