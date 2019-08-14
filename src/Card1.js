@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Loader from "react-loader-spinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
+import "./Card1.css";
 
 class Card1 extends Component {
   state = {
@@ -12,33 +15,24 @@ class Card1 extends Component {
   carousel = () => {
     if (this.state.loaded === true) {
       return (
-        <div className="changeBackground">
-          <Carousel
-            autoPlay={true}
-            showThumbs={false}
-            showStatus={false}
-            transition={4500}
-          >
-            <div>
-              <img
-                src="https://source.unsplash.com/jO3OYLdcxJo/200x100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://source.unsplash.com/o4Tc9wRMVVM/200x100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://source.unsplash.com/xEY0dtFfon0/200x100"
-                alt=""
-              />
-            </div>
-          </Carousel>
-        </div>
+        //<div className="changeBackground">
+        <Carousel
+          autoPlay={true}
+          showThumbs={false}
+          showStatus={false}
+          transition={4500}
+        >
+          <div>
+            <img src="https://source.unsplash.com/jO3OYLdcxJo/200x100" alt="" />
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/o4Tc9wRMVVM/200x100" alt="" />
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/xEY0dtFfon0/200x100" alt="" />
+          </div>
+        </Carousel>
+        //</div>
       );
     } else {
       return (
@@ -59,7 +53,15 @@ class Card1 extends Component {
         </h1>
         <h5>
           <div className="selector">
-            <span>WOMEN MULHER</span>
+            <span>
+              WOMEN{" "}
+              <FontAwesomeIcon
+                icon={faPlusCircle}
+                size="2x"
+                className="plusIcon1"
+              />
+              MULHER
+            </span>
           </div>
         </h5>
       </div>

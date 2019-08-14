@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  top: 50px;
+}
+.changeBackground:hover {
+  background: black;
+  cursor: pointer;
+  color: white;
+}
+
+.loader {
+  position: relative;
+  text-align: center;
+  top: 200px;
+}
+
+.selector {
+  font-size: 10px;
+  padding: 0px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+
+.plusIcon1 {
+  position: relative;
+  left: 4px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+}
+
+.title {
+  position: relative;
+  top: -20;
+  display: block;
+  font-size: 32px;
+  writing-mode: lr-tb;
+  color: white;
+  font-weight: 800;
+}

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Modelo1 from "./images/Modelo1.jpg";
 import Draggable from "react-draggable";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
+import "./Card2.css";
 
 class Card2 extends Component {
   render() {
@@ -27,6 +30,11 @@ class Card2 extends Component {
           >
             <img src={Modelo1} alt="" className="card2" />
           </Draggable>
+          <FontAwesomeIcon
+            icon={faPlusCircle}
+            size="1x"
+            className="plusIcon2"
+          />
         </div>
       </div>
     );

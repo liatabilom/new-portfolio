@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
+
 .btn-outline-dark {
-  color: #00000;
-  border-color: #00000;
+  color: black;
+  border-color: black;
 }
 
 .page-button {
   color: black;
+  width: 30px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .page-button:hover {
