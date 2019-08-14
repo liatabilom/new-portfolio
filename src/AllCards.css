@@ -47,11 +47,14 @@
   text-orientation: upright;
   position: relative;
   left: 70px;
-  top: 160px;
+  top: 90px;
 }
 
 .title {
-  font-size: 22px;
+  position: relative;
+  top: -20;
+  display: block;
+  font-size: 62px;
   writing-mode: lr-tb;
   color: white;
   font-weight: 800;

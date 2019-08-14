@@ -1,10 +1,4 @@
-import React, { Component } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Loader from "react-loader-spinner";
-
-class Card1 extends Component {
-  state = {
+state = {
     loaded: true,
     bgColor: "#f5f4ef"
   };
@@ -59,12 +53,11 @@ class Card1 extends Component {
         </h1>
         <h5>
           <div className="selector">
-            <span>WOMEN MULHER</span>
+            <span>WOMEN</span>
+            <br />
+            <span>MULHER</span>
           </div>
         </h5>
       </div>
     );
   }
-}
-
-export default Card1;
