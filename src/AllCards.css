@@ -29,6 +29,12 @@
   top: 50px;
 }
 
+.changeBackground:hover {
+  background: black;
+  cursor: pointer;
+  color: white;
+}
+
 .loader {
   position: relative;
   text-align: center;

@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container mainContainer mt-3">
+    <div className="container mainContainer changeBackground mt-3">
       <Main />
     </div>
   );

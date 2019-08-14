@@ -8,7 +8,7 @@ class Pages extends Component {
         <nav aria-label="footer">
           <ul className="bottom-pages">
             <li className="btn btn-outline-dark rounded-1">
-              <a className="page-button" href="#">
+              <a className="page-button changeBackground" href="#">
                 Page 1
               </a>
             </li>

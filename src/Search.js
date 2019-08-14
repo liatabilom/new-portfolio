@@ -7,7 +7,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form className="changeBackground">
           <div className="clearfix">
             <div className="float-left">
               <input className="emailInput" type="text" placeholder="Email" />

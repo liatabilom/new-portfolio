@@ -5,30 +5,36 @@ import Loader from "react-loader-spinner";
 
 class Card1 extends Component {
   state = {
-    loaded: true
+    loaded: true,
+    bgColor: "#f5f4ef"
   };
 
   carousel = () => {
     if (this.state.loaded === true) {
       return (
-        <div className="carousel">
-          <Carousel autoPlay={true} showThumbs={false} showStatus={false}>
+        <div className="changeBackground">
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            showStatus={false}
+            transition={4500}
+          >
             <div>
               <img
                 src="https://source.unsplash.com/jO3OYLdcxJo/200x100"
-                alt="First slide"
+                alt=""
               />
             </div>
             <div>
               <img
                 src="https://source.unsplash.com/o4Tc9wRMVVM/200x100"
-                alt="Second slide"
+                alt=""
               />
             </div>
             <div>
               <img
                 src="https://source.unsplash.com/xEY0dtFfon0/200x100"
-                alt="Third"
+                alt=""
               />
             </div>
           </Carousel>
@@ -46,10 +52,10 @@ class Card1 extends Component {
   //UPDATE FONT SIZE
   render() {
     return (
-      <div>
+      <div className="carousel">
         <h1>
           <span className="title">BROO KSBR OTHE RS</span>
-          {this.carousel()}
+          <div>{this.carousel()}</div>
         </h1>
         <h5>
           <div className="selector">
